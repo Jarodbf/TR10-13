@@ -54,7 +54,7 @@ function supp(formulaire)
         let suppTemp = (formulaire.suppV.value);
         if((roulette[suppTemp].value) || (roulette[suppTemp].value !== undefined)) {
             roulette[suppTemp].value = false;
-            document.getElementById("elAffichage").innerText = ("L'élément " + roulette[suppTemp].name + " a bien été ajoutée supprimer à la position " + roulette[suppTemp].pos + ".")
+            document.getElementById("elAffichage").innerText = ("L'élément " + roulette[suppTemp].name + " a bien été supprimé à la position " + roulette[suppTemp].pos + ".")
             return false;
         }
         else{
