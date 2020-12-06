@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8>
+    <link rel="stylesheet" type="text/css" href="css/debase.css">
+    <title>TP08 - Entrainement : Liste de tâches</title>
+    <script src="js/roulette.js"></script>
+</head>
+<body>
+<!-- ***** NAVIGATION ***** -->
+<header>
+    <nav>
+        <a href="index.html">Index</a>
+        <a href="ajout.html">Ajouter élement</a>
+        <a href="ajout.html">Supprimer élement</a>
+        <a href="ajout.html">Tourner la roue</a>
+    </nav>
+</header>
+<!-- ***** FORMULAIRE ***** -->
+
+<form id="formRoul" action=# onSubmit='return ajouterEl(this);'>
+    <fieldset>
+        <legend>Création d'une entrée</legend>
+        <!-- nom -->
+        <label for="nom">Nom : </label>
+        <input id="nom" name="nom" type="text" required> <br><br>
+        <!-- bouton -->
+        <input type="submit" value="Ajouter Tâche">
+        <input type="reset">
+    </fieldset>
+</form>
+<hr>
+
+<!-- ***** AFFICHAGE ***** -->
+
+<div>
+    <button onclick="affiche()">Afficher élément</button>
+    <div id="elAffichage" style="color: blue">
+    </div>
+    <br>
+</div>
+<hr>
+<form id="formSupp" action=# onSubmit='return supp(this);'>
+    <fieldset>
+        <legend>Supression d'une entrée</legend>
+        <!-- Numero -->
+        <label for="formSupp">Numéro : </label>
+        <input id="suppV" name="suppV" type="number" min="0" step="1" required> <br><br>
+        <!-- bouton -->
+        <input type="submit" value="Suprimer">
+        <input type="reset">
+    </fieldset>
+</form>
+<hr>
+</body>
+</html>
