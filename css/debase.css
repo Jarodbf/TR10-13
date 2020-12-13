@@ -34,4 +34,12 @@ form{
 img{
     padding: 5%;
 }
-
+div{
+    position: center;
+    text-align: center;
+    padding:35px 30%;
+}
+.test{
+    width: 95%;
+    height: 400px;
+}
