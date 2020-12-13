@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
     <meta charset=utf-8>
     <link rel="stylesheet" type="text/css" href="css/debase.css">
@@ -11,9 +11,9 @@
 <header>
     <nav>
         <a href="index.html">Index</a>
-        <a href="ajout.html">Ajouter élement</a>
-        <a href="ajout.html">Supprimer élement</a>
-        <a href="ajout.html">Tourner la roue</a>
+        <a href="#formRoul">Ajouter élement</a>
+        <a href="#formSupp">Supprimer élement</a>
+        <a href="#Roulette">Tourner la roue</a>
     </nav>
 </header>
 <!-- ***** FORMULAIRE ***** -->
@@ -34,9 +34,11 @@
 <!-- ***** AFFICHAGE ***** -->
 
 <div>
-    <button onclick="affiche()">Afficher élément</button>
-    <div id="elAffichage" style="color: blue">
-    </div>
+    <fieldset class="test">
+        <legend><button onclick="affiche()">Afficher élément</button></legend>
+        <div id="elAffichage">
+        </div>
+    </fieldset>
     <br>
 </div>
 <hr>
@@ -52,5 +54,8 @@
     </fieldset>
 </form>
 <hr>
+<section id="Roulette">
+
+</section>
 </body>
 </html>
