@@ -39,7 +39,11 @@ div{
     text-align: center;
     padding:35px 30%;
 }
-.test{
+.aff{
     width: 95%;
     height: 400px;
+}
+.affRoul{
+    width: 95%;
+    height: 150px;
 }
