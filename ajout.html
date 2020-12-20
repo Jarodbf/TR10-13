@@ -34,8 +34,8 @@
 <!-- ***** AFFICHAGE ***** -->
 
 <div>
-    <fieldset class="test">
-        <legend><button onclick="affiche()">Afficher élément</button></legend>
+    <fieldset class="aff">
+        <legend><button onclick="affiche()">Afficher élément</button><button onclick="afficheAlph()">Par ordre halphabetique</button></legend>
         <div id="elAffichage">
         </div>
     </fieldset>
@@ -54,8 +54,16 @@
     </fieldset>
 </form>
 <hr>
-<section id="Roulette">
-
-</section>
+    <section id="Roulette">
+        <button onclick="roul()" ><img src="img/wheel.gif"></button>
+    </section>
+<div>
+    <fieldset class="affRoul">
+        <legend>Résultat roulette</legend>
+        <div id="roulAffichage">
+        </div>
+    </fieldset>
+    <br>
+</div>
 </body>
 </html>
